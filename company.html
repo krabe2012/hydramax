@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title></title>
+
+  <link rel="stylesheet" href="/company.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo logo">
+          <a href="" class="logo__link">Hydra<span class="max">Max</span></a>
+        </div>
+        <!-- <div class="header__burger burger">
+          <span></span>
+        </div>-->
+        <button class="header__btn btn">меню</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        <div class="page">
+          <div class="page__title title">О нас</div>
+          <p class="page__text text">
+            Профильная мастерская, специализирующаяся на ремонте
+            гидравлических цилиндров и сопутствующего гидравлического
+            оборудования: <br />
+            насосов, моторов, распределителей, относящихся к дорожным машинам,
+            мобильным силовым установкам, кранам, судам.
+          </p>
+
+          <div class="page__inner-block inner-block work">
+            <div class="work__item item">
+              <!--<img src="/img/diagnos.jpeg" alt="" class="item__img">-->
+              <div class="item__title title">
+                Диагностируем гидравлическое оборудование
+              </div>
+              <p class="item__text text">
+                Диагностика гидравлических систем и узлов, экскаваторов,
+                погрузчиков, дорожных катков, комбайнов, мусоровозов,
+                автокранов, установок ГНБ, бетононасосов, миксеров.
+              </p>
+              <a href="/service.html#dgnst" class="link">
+                <button class="item__btn btn">Подробнее</button>
+              </a>
+            </div>
+
+            <div class="work__item item">
+              <!-- <img src="/img/repair.jpg" alt="" class="item__img">-->
+              <div class="item__title title">
+                Ремонтируем гидравлические узлы
+              </div>
+              <p class="item__text text">
+                Ремонт гидронасосов, гидромоторов, гидроцилиндров,
+                гидрораспределителей, вибропогружателей, ГМП, навесного
+                оборудования, гидростанций.
+              </p>
+              <a href="/service.html#rpr-cyl" class="link">
+                <button class="item__btn btn">Подробнее</button>
+              </a>
+            </div>
+
+            <div class="work__item item">
+              <!--<img src="/img/service.jpg" alt="" class="item__img">-->
+              <div class="item__title title">Обслуживаем гидравлику</div>
+
+              <p class="item__text text">
+                Полная замена масла с промывкой системы. Настройка
+                гидросистемы.
+                <br />
+                Консультации.
+              </p>
+              <a href="/service.html#srvc" class="link">
+                <button class="item__btn btn">Подробнее
+                </button>
+              </a>
+            </div>
+          </div>
+
+
+          <div class="page__inner-block inner-block advant">
+            <div class="inner-block__title title">
+              Наши клиенты получают необходимые рекомендации и
+              квалифицированную поддержку 24/7:
+            </div>
+            <p class="inner-block__text text">
+              Ремонт узлов и испытания проводятся в соответствии с
+              технологическими картами по ремонту и восстановлению.
+              <br /><br />
+              Использование только оригинальных комплектующих от проверенных
+              поставщиков России и зарубежья.
+              <br /><br />
+              Проведение диагностических и ремонтных работ с выездом, силами
+              мобильной бригады специалистов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <button class="footer__btn btn">СВЯЗАТЬСЯ С НАМИ</button>
+      </div>
+    </footer>
+  </div>
+
+  <!--<script>
+    const btnMenu = document.querySelector(".header__btn");
+    const menu = document.querySelector(".menu");
+
+    btnMenu.addEventListener("click", () => {
+      console.log("loh");
+      menu.classList.toggle("active");
+      if (menu.classList.contains("active")) {
+        btnMenu.textContent = "назад";
+      } else {
+        btnMenu.textContent = "меню";
+      }
+
+      event.preventDefault()
+    });
+  </script>-->
+  <script src="/menu.js"></script>
+</body>
+
+</html>

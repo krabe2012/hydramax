@@ -1,0 +1,79 @@
+@import url(/components.css);
+
+.rpr-cyl__accordion {
+  margin-top: 20px;
+}
+
+.acc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.acc__item {
+  background-color: orange;
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+
+.acc-item__content {
+  overflow: hidden;
+  height: 0;
+  transition: all .3s linear;
+  
+}
+
+.acc-item__content.active {
+  transition: all .3s linear;
+}
+
+.acc-item__title {
+  font-family: "Micra-Bold", sans-serif;
+  font-size: .8rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acc-item__text {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.acc-item__title>span {
+  color: dimgray;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: all .3s linear;
+}
+
+.acc-item__title>span.rotate {
+  transform: rotate(45deg);
+  transition: all .3s linear;
+}
+
+.acc-item__title>span::before {
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: dimgray;
+}
+
+.acc-item__title>span::after {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  content: "";
+  width: 2px;
+  height: 16px;
+  background-color: dimgray;
+}
+
+.garant {
+}

@@ -1,0 +1,12 @@
+@import url(/components.css);
+
+.work__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.inner-block__text>span {
+  font-weight: 400;
+}
